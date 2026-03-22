@@ -7,9 +7,18 @@ export const MobileBar: React.FC = () => {
 
   return (
     <div className="mob-bar">
-      <a href={`tel:${SITE_CONFIG.contact.phoneRaw}`} className="mb-call">📞 Call Now</a>
-      <a href={waUrl} className="mb-wa" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
-      <Link to="/contact" className="mb-book">📅 Book Now</Link>
+      <a href={`tel:${SITE_CONFIG.contact.phoneRaw}`} className="mb-call">
+        <span style={{ fontSize: '1.2rem', display: 'block' }}>📞</span>
+        Call
+      </a>
+      <a href={waUrl} className="mb-wa" target="_blank" rel="noopener noreferrer">
+        <span style={{ fontSize: '1.2rem', display: 'block' }}>💬</span>
+        WhatsApp
+      </a>
+      <Link to="/contact" className="mb-book">
+        <span style={{ fontSize: '1.2rem', display: 'block' }}>📅</span>
+        Book
+      </Link>
     </div>
   );
 };

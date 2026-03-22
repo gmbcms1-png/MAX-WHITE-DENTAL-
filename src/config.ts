@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   clinic: {
     name: "Max White Dental",
     subName: "Modern Dental Care · Rishikesh",
-    logoUrl: "https://instagram.fagr1-1.fna.fbcdn.net/v/t51.2885-19/245604402_1519515215077052_3014080826239219623_n.jpg?stp=dst-jpg_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fagr1-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2gEtfYiFoVOAP15_hsJ7gr5K7fNldzGm_V9ZSL1QMna6nOyLYmaDDVKeguasoseNPXPIgAd8FtvkAJWN6vRmUKVh&_nc_ohc=6w3BYP4gLyQQ7kNvwHqqj7A&_nc_gid=jNSWgbzsPrLMQYGG9h_KYw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfyEsr4v1koNVWjhFyWcIGEOxBDXi8bsPSOjLA5pyDtk-A&oe=69C5C8A3&_nc_sid=8b3546", // Updated logo URL
+    logoUrl: "", // Use initial 'M' instead of an image URL
     logoInitial: "M",
     tagline: "Confident Smiles Begin Here",
     experience: "10+",
@@ -33,8 +33,8 @@ export const SITE_CONFIG = {
     email: "info@maxwhitedental.com",
     address: "135, Badrinath Rd, opposite to Balaknath Temple, near SBI bank, Tapovan, Rishikesh, Uttarakhand 248192",
     addressShort: "135, Badrinath Rd, Tapovan, Rishikesh",
-    googleMapsLink: "https://maps.app.goo.gl/usiBEzi5QUHryww76",
-    googleMapsEmbed: "https://www.google.com/maps?q=Max+White+Dental+Tapovan+Rishikesh+near+SBI+bank&output=embed",
+    googleMapsLink: "https://maps.app.goo.gl/cDLasXmiHhrmMnsFA",
+    googleMapsEmbed: "https://maps.google.com/maps?q=Max+White+Dental+135+Badrinath+Rd+Tapovan+Rishikesh+Uttarakhand+248192&output=embed",
     hours: {
       weekdays: "Mon–Sat: 7:30 AM – 7:30 PM",
       sunday: "Sunday: By Appointment"

@@ -130,7 +130,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* SERVICES */}
-      <section className="sec sec-alt" id="services">
+      <section className="sec sec-srv" id="services">
+        <div className="srv-bg-pattern"></div>
         <div className="con">
           <div className="sec-head">
             <span className="sec-tag">Our Services</span>
@@ -140,9 +141,11 @@ export const Home: React.FC = () => {
           <div className="srv-grid">
             {SITE_CONFIG.services.slice(0, 6).map((srv, idx) => (
               <div key={idx} className="srv-card">
-                <div className="srv-icon">{srv.icon}</div>
+                <div className="srv-tag">{idx < 2 ? 'Popular' : 'Advanced'}</div>
+                <div className="srv-icon-wrap">{srv.icon}</div>
                 <h3>{srv.title}</h3>
                 <p>{srv.desc}</p>
+                <div className="srv-link">Learn More <span>→</span></div>
               </div>
             ))}
           </div>
@@ -219,7 +222,7 @@ export const Home: React.FC = () => {
               <a href={SITE_CONFIG.contact.googleMapsLink} className="map-dir" target="_blank" rel="noopener noreferrer">Get Directions on Maps →</a>
             </div>
             <div className="map-embed">
-              <iframe src={SITE_CONFIG.contact.googleMapsEmbed} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src={SITE_CONFIG.contact.googleMapsEmbed} title="Max White Dental Location" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

@@ -117,7 +117,7 @@ export const Contact: React.FC = () => {
               <a href={SITE_CONFIG.contact.googleMapsLink} className="map-dir" target="_blank" rel="noopener noreferrer">Get Directions on Maps →</a>
             </div>
             <div className="map-embed">
-              <iframe src={SITE_CONFIG.contact.googleMapsEmbed} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src={SITE_CONFIG.contact.googleMapsEmbed} title="Max White Dental Location" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

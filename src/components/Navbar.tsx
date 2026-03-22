@@ -9,6 +9,17 @@ export const Navbar: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div className="topbar">
@@ -47,11 +58,17 @@ export const Navbar: React.FC = () => {
       </nav>
 
       <div className={`mmenu ${isOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={closeMenu}>Home</Link>
-        <Link to="/about" onClick={closeMenu}>About {SITE_CONFIG.clinic.doctorName}</Link>
-        <Link to="/services" onClick={closeMenu}>Services</Link>
-        <Link to="/contact" onClick={closeMenu}>Contact</Link>
-        <a href="/#appointment" className="mm-book" onClick={closeMenu}>📅 Make Appointment</a>
+        <Link to="/" onClick={closeMenu}>🏠 Home</Link>
+        <Link to="/about" onClick={closeMenu}>👨‍⚕️ About {SITE_CONFIG.clinic.doctorName}</Link>
+        <Link to="/services" onClick={closeMenu}>🦷 Our Services</Link>
+        <Link to="/contact" onClick={closeMenu}>📞 Contact Us</Link>
+        <div style={{ padding: '1.5rem 0 0.5rem' }}>
+          <a href="/#appointment" className="mm-book" onClick={closeMenu}>📅 Book Appointment</a>
+        </div>
+        <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+          <a href={`tel:${SITE_CONFIG.contact.phoneRaw}`} style={{ border: 'none', padding: '0.5rem' }}>📞 Call</a>
+          <a href={`https://wa.me/${SITE_CONFIG.contact.whatsapp}`} style={{ border: 'none', padding: '0.5rem' }}>💬 WhatsApp</a>
+        </div>
       </div>
     </>
   );

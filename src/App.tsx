@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { MobileBar } from './components/MobileBar';
+import { BackToTop } from './components/BackToTop';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Services } from './pages/Services';
@@ -22,6 +23,7 @@ function App() {
         </Routes>
         <Footer />
         <WhatsAppButton />
+        <BackToTop />
         <MobileBar />
       </div>
     </Router>
