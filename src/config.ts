@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   clinic: {
     name: "Max White Dental",
     subName: "Modern Dental Care · Rishikesh",
-    logoUrl: "https://placehold.co/200x80/0ea5e9/white?text=Max+White+Dental", // Replace this with your actual logo image URL
+    logoUrl: "https://instagram.fagr1-1.fna.fbcdn.net/v/t51.2885-19/245604402_1519515215077052_3014080826239219623_n.jpg?stp=dst-jpg_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fagr1-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2gEtfYiFoVOAP15_hsJ7gr5K7fNldzGm_V9ZSL1QMna6nOyLYmaDDVKeguasoseNPXPIgAd8FtvkAJWN6vRmUKVh&_nc_ohc=6w3BYP4gLyQQ7kNvwHqqj7A&_nc_gid=jNSWgbzsPrLMQYGG9h_KYw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfyEsr4v1koNVWjhFyWcIGEOxBDXi8bsPSOjLA5pyDtk-A&oe=69C5C8A3&_nc_sid=8b3546", // Updated logo URL
     logoInitial: "M",
     tagline: "Confident Smiles Begin Here",
     experience: "10+",
