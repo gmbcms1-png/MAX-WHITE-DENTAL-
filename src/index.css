@@ -423,27 +423,37 @@ footer{background:var(--primary-dark);padding:60px 5% 30px;color:#fff;}
 
 /* MOBILE RESPONSIVE CSS */
 @media(max-width:768px){
-  .hero-inner{grid-template-columns:1fr !important; padding:40px 5% 20px; text-align:center;}
+  .hero-inner{grid-template-columns:1fr !important; padding:40px 15px 20px; text-align:center;}
   .hero-content{text-align:center;}
   .hero-badge { margin: 0 auto 1.5rem; }
   .hero-btns{justify-content:center; gap: 0.5rem; }
   .hero-btns .btn-green, .hero-btns .btn-outline { width: 100%; max-width: 300px; padding: 0.9rem 1.5rem; }
   .hero-stats{justify-content:center; gap:1.5rem; margin-top: 1rem; }
-  .hero-form-wrap{margin-top:25px; padding: 1.5rem; }
+  .hero-form-wrap{margin-top:25px; padding: 1.25rem; border-radius: 16px; width: 100%; box-sizing: border-box; }
   .nav-inner .nav-links, .nav-inner .nav-cta{display:none;}
   .nav-inner .hbg{display:flex;}
   .about-grid, .srv-grid, .why-grid, .rev-grid, .gal-grid, .appt-inner, .map-grid{grid-template-columns:1fr !important; gap:32px;}
+  .appt-left { text-align: center; }
+  .appt-left h2 { font-size: 1.6rem; margin-bottom: 0.8rem; }
+  .appt-left p { margin-bottom: 1.5rem; font-size: 0.88rem; line-height: 1.6; }
+  .appt-contacts { align-items: center; gap: 0.8rem; }
+  .appt-ci { text-align: left; width: 100%; max-width: 320px; }
+  .appt-ci-ic { width: 36px; height: 36px; font-size: 0.95rem; }
+  .appt-form { padding: 1.25rem; border-radius: 16px; width: 100%; box-sizing: border-box; }
+  .appt-form h3 { font-size: 1.3rem; text-align: center; margin-bottom: 1rem; }
   .hero-img{order:-1; margin-bottom:20px;}
   .about-img-main{aspect-ratio:1/1; border-radius: 16px; }
   .about-exp-badge{right:10px; bottom:10px; padding: 0.8rem 1rem; }
   .aeb-num { font-size: 1.5rem; }
   .fg-row{grid-template-columns:1fr;}
+  .fg input, .fg select, .fg textarea { font-size: 16px; padding: 0.8rem 1rem; border-radius: 10px; }
   .footer-top{grid-template-columns:1fr; gap:30px; text-align: center; }
   .ft-title::after { left: 50%; transform: translateX(-50%); }
   .ft-ci { justify-content: center; }
   .topbar{display:none;}
   .tb-sep{display:none;}
-  .sec{padding:50px 5%;}
+  .sec{padding:50px 15px;}
+  .appt{padding:48px 15px;}
   .sec-head { margin-bottom: 2rem; }
   .wa-wrap{bottom:90px; right:20px;}
   .wa-tip{display:none;}

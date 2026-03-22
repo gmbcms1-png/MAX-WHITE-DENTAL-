@@ -4,7 +4,7 @@
  */
 export const SITE_CONFIG = {
   clinic: {
-    name: "Max White Dental",
+    name: "Max White Dental Clinic",
     subName: "Modern Dental Care · Rishikesh",
     logoUrl: "", // Use initial 'M' instead of an image URL
     logoInitial: "M",
